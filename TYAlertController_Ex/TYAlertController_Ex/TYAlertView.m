@@ -9,7 +9,6 @@
 #import "TYAlertView.h"
 #import "TYAlertController.h"
 #import "UIView+TYAutoLayout.h"
-#import "OpenIMMacro.h"
 
 #pragma mark - TYAlertAction
 @interface TYAlertAction ()
@@ -129,21 +128,21 @@
     // 默认275
     _messageScrollHeight = 275;
     // 按钮字体 17pt
-    _buttonDefaultFont = OpenIMFONTLight(17);
-    _buttonCancelFont = OpenIMFONTLight(17);
-    _buttonOKFont = OpenIMFONTMedium(17);
+    _buttonDefaultFont = [UIFont systemFontOfSize:17];
+    _buttonCancelFont = [UIFont systemFontOfSize:17];
+    _buttonOKFont = [UIFont systemFontOfSize:17];
 
     // 按钮背景颜色
     _buttonDefaultBgColor = UIColor.whiteColor;
     _buttonCancelBgColor = UIColor.whiteColor;
-    _buttonOKBgColor = OpenIMRGBH(0xE63629);
+    _buttonOKBgColor = UIColor.blueColor;
     // 按钮按下背景颜色
-    _buttonDefaultHightBgColor = OpenIMRGBH(0xEEEEEE);
-    _buttonCancelHightBgColor = OpenIMRGBH(0xEEEEEE);
-    _buttonOKHightBgColor = OpenIMRGBH(0xE63629);
+    _buttonDefaultHightBgColor = UIColor.lightGrayColor;
+    _buttonCancelHightBgColor = UIColor.lightGrayColor;
+    _buttonOKHightBgColor = UIColor.blueColor;
     // 按钮字体颜色
-    _buttonDefaultTitleColor = OpenIMRGBH(0xE63629);
-    _buttonCancelTitleColor = OpenIMRGBH(0x999999);
+    _buttonDefaultTitleColor = UIColor.blackColor;
+    _buttonCancelTitleColor = UIColor.blackColor;
     _buttonOKTitleColor = UIColor.whiteColor;
 
     _buttons = [NSMutableArray array];
@@ -218,8 +217,8 @@
     UILabel *titleLabel = [[UILabel alloc]init];
     titleLabel.text = _titleStr;
     titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.font = OpenIMFONTMedium(17);
-    titleLabel.textColor = OpenIMRGBH(0x333333);
+    titleLabel.font = [UIFont systemFontOfSize:17];
+    titleLabel.textColor = UIColor.blackColor;
     [self addSubview:titleLabel];
     _titleLable = titleLabel;
     
@@ -234,8 +233,8 @@
     messageLabel.text = _messageStr;
     messageLabel.numberOfLines = 0;
     messageLabel.textAlignment = NSTextAlignmentCenter;
-    messageLabel.font = OpenIMFONTLight(15);
-    messageLabel.textColor = OpenIMRGBH(0x333333);
+    messageLabel.font = [UIFont systemFontOfSize:17];
+    messageLabel.textColor = UIColor.blackColor;
     _messageLabel = messageLabel;
     if (_messageScrollEnable) {
         [_scrollView addSubview:messageLabel];
@@ -249,12 +248,12 @@
     _buttonContentView = buttonContentView;
 
     UIView *buttonContentHorLineView = [[UIView alloc] init];
-    buttonContentHorLineView.backgroundColor = OpenIMRGBH(0xF1F1F1);
+    buttonContentHorLineView.backgroundColor = [UIColor colorWithRed:241/255.0  green:241/255.0  blue:241/255.0  alpha:1];
     [buttonContentView addSubview:buttonContentHorLineView];
     _buttonContentHorLineView = buttonContentHorLineView;
     
     UIView *buttonContentVerLineView = [[UIView alloc] init];
-    buttonContentVerLineView.backgroundColor = OpenIMRGBH(0xF1F1F1);
+    buttonContentVerLineView.backgroundColor = [UIColor colorWithRed:241/255.0  green:241/255.0  blue:241/255.0  alpha:1];
     [buttonContentView addSubview:buttonContentVerLineView];
     _buttonContentVerLineView = buttonContentVerLineView;
 }
