@@ -2,6 +2,10 @@ Pod::Spec.new do |spec|
   spec.name         = "TYAlertController_Ex"
   spec.version      = "0.1.0"
   spec.summary      = "TYAlertController_Ex is Modify the library based on the third-party TYAlertController"
+  spec.description  = <<-DESC
+                    "TYAlertController_Ex Library"
+                   DESC
+
   spec.homepage     = "https://github.com/Delevel1020/TYAlertController_Ex.git"
   spec.license      = "MIT"
   spec.author       = { "delevel" => "delevel1020@gmail.com" }
