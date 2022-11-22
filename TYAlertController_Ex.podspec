@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
                     "TYAlertController_Ex Library"
                    DESC
 
-  spec.homepage     = "https://github.com/Delevel1020/TYAlertController_Ex.git"
+  spec.homepage     = "https://github.com/Delevel1020/TYAlertController_Ex"
   spec.license      = "MIT"
   spec.author       = { "delevel" => "delevel1020@gmail.com" }
   spec.ios.deployment_target = "10.0"
