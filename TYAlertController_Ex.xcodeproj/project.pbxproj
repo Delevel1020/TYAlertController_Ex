@@ -15,6 +15,16 @@
 		35D2D0A7292B928600D2FE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D2D0A6292B928600D2FE6F /* Assets.xcassets */; };
 		35D2D0AA292B928600D2FE6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D2D0A8292B928600D2FE6F /* LaunchScreen.storyboard */; };
 		35D2D0AD292B928600D2FE6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0AC292B928600D2FE6F /* main.m */; };
+		35D2D0C7292C5D1300D2FE6F /* TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0B4292C5D1300D2FE6F /* TYAlertView.m */; };
+		35D2D0C8292C5D1300D2FE6F /* UIImage+TYAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0B7292C5D1300D2FE6F /* UIImage+TYAlert.m */; };
+		35D2D0C9292C5D1300D2FE6F /* TYAlertScaleFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0B8292C5D1300D2FE6F /* TYAlertScaleFadeAnimation.m */; };
+		35D2D0CA292C5D1300D2FE6F /* TYAlertFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0BA292C5D1300D2FE6F /* TYAlertFadeAnimation.m */; };
+		35D2D0CB292C5D1300D2FE6F /* TYAlertController+BlurEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0BB292C5D1300D2FE6F /* TYAlertController+BlurEffects.m */; };
+		35D2D0CC292C5D1300D2FE6F /* TYAlertController+TransitionAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0BC292C5D1300D2FE6F /* TYAlertController+TransitionAnimate.m */; };
+		35D2D0CD292C5D1300D2FE6F /* UIView+TYAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0BE292C5D1300D2FE6F /* UIView+TYAutoLayout.m */; };
+		35D2D0CE292C5D1300D2FE6F /* TYAlertDropDownAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0BF292C5D1300D2FE6F /* TYAlertDropDownAnimation.m */; };
+		35D2D0CF292C5D1300D2FE6F /* TYBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0C2292C5D1300D2FE6F /* TYBaseAnimation.m */; };
+		35D2D0D0292C5D1300D2FE6F /* TYAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2D0C4292C5D1300D2FE6F /* TYAlertController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +41,25 @@
 		35D2D0A9292B928600D2FE6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35D2D0AB292B928600D2FE6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35D2D0AC292B928600D2FE6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35D2D0B4292C5D1300D2FE6F /* TYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertView.m; sourceTree = "<group>"; };
+		35D2D0B5292C5D1300D2FE6F /* TYAlertDropDownAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertDropDownAnimation.h; sourceTree = "<group>"; };
+		35D2D0B6292C5D1300D2FE6F /* UIView+TYAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYAutoLayout.h"; sourceTree = "<group>"; };
+		35D2D0B7292C5D1300D2FE6F /* UIImage+TYAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYAlert.m"; sourceTree = "<group>"; };
+		35D2D0B8292C5D1300D2FE6F /* TYAlertScaleFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertScaleFadeAnimation.m; sourceTree = "<group>"; };
+		35D2D0B9292C5D1300D2FE6F /* TYBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYBaseAnimation.h; sourceTree = "<group>"; };
+		35D2D0BA292C5D1300D2FE6F /* TYAlertFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertFadeAnimation.m; sourceTree = "<group>"; };
+		35D2D0BB292C5D1300D2FE6F /* TYAlertController+BlurEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TYAlertController+BlurEffects.m"; sourceTree = "<group>"; };
+		35D2D0BC292C5D1300D2FE6F /* TYAlertController+TransitionAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TYAlertController+TransitionAnimate.m"; sourceTree = "<group>"; };
+		35D2D0BD292C5D1300D2FE6F /* TYAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertController.h; sourceTree = "<group>"; };
+		35D2D0BE292C5D1300D2FE6F /* UIView+TYAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYAutoLayout.m"; sourceTree = "<group>"; };
+		35D2D0BF292C5D1300D2FE6F /* TYAlertDropDownAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertDropDownAnimation.m; sourceTree = "<group>"; };
+		35D2D0C0292C5D1300D2FE6F /* TYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertView.h; sourceTree = "<group>"; };
+		35D2D0C1292C5D1300D2FE6F /* UIImage+TYAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TYAlert.h"; sourceTree = "<group>"; };
+		35D2D0C2292C5D1300D2FE6F /* TYBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYBaseAnimation.m; sourceTree = "<group>"; };
+		35D2D0C3292C5D1300D2FE6F /* TYAlertScaleFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertScaleFadeAnimation.h; sourceTree = "<group>"; };
+		35D2D0C4292C5D1300D2FE6F /* TYAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertController.m; sourceTree = "<group>"; };
+		35D2D0C5292C5D1300D2FE6F /* TYAlertController+BlurEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TYAlertController+BlurEffects.h"; sourceTree = "<group>"; };
+		35D2D0C6292C5D1300D2FE6F /* TYAlertFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertFadeAnimation.h; sourceTree = "<group>"; };
 		86EE9351CDB92F26BACD1839 /* Pods-TYAlertController_Ex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAlertController_Ex.debug.xcconfig"; path = "Target Support Files/Pods-TYAlertController_Ex/Pods-TYAlertController_Ex.debug.xcconfig"; sourceTree = "<group>"; };
 		D5FA928BAAB30765F0A27AD4 /* Pods_TYAlertController_Ex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYAlertController_Ex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -53,7 +82,6 @@
 				86EE9351CDB92F26BACD1839 /* Pods-TYAlertController_Ex.debug.xcconfig */,
 				149C354B5CE8EE497BB7F839 /* Pods-TYAlertController_Ex.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,6 +106,7 @@
 		35D2D099292B927E00D2FE6F /* TYAlertController_Ex */ = {
 			isa = PBXGroup;
 			children = (
+				35D2D0B3292C5D1300D2FE6F /* TYAlertController_Ex */,
 				35D2D09A292B927E00D2FE6F /* AppDelegate.h */,
 				35D2D09B292B927E00D2FE6F /* AppDelegate.m */,
 				35D2D09D292B927E00D2FE6F /* SceneDelegate.h */,
@@ -89,6 +118,32 @@
 				35D2D0A8292B928600D2FE6F /* LaunchScreen.storyboard */,
 				35D2D0AB292B928600D2FE6F /* Info.plist */,
 				35D2D0AC292B928600D2FE6F /* main.m */,
+			);
+			path = TYAlertController_Ex;
+			sourceTree = "<group>";
+		};
+		35D2D0B3292C5D1300D2FE6F /* TYAlertController_Ex */ = {
+			isa = PBXGroup;
+			children = (
+				35D2D0BD292C5D1300D2FE6F /* TYAlertController.h */,
+				35D2D0C4292C5D1300D2FE6F /* TYAlertController.m */,
+				35D2D0C5292C5D1300D2FE6F /* TYAlertController+BlurEffects.h */,
+				35D2D0BB292C5D1300D2FE6F /* TYAlertController+BlurEffects.m */,
+				35D2D0BC292C5D1300D2FE6F /* TYAlertController+TransitionAnimate.m */,
+				35D2D0B5292C5D1300D2FE6F /* TYAlertDropDownAnimation.h */,
+				35D2D0BF292C5D1300D2FE6F /* TYAlertDropDownAnimation.m */,
+				35D2D0C6292C5D1300D2FE6F /* TYAlertFadeAnimation.h */,
+				35D2D0BA292C5D1300D2FE6F /* TYAlertFadeAnimation.m */,
+				35D2D0C3292C5D1300D2FE6F /* TYAlertScaleFadeAnimation.h */,
+				35D2D0B8292C5D1300D2FE6F /* TYAlertScaleFadeAnimation.m */,
+				35D2D0C0292C5D1300D2FE6F /* TYAlertView.h */,
+				35D2D0B4292C5D1300D2FE6F /* TYAlertView.m */,
+				35D2D0B9292C5D1300D2FE6F /* TYBaseAnimation.h */,
+				35D2D0C2292C5D1300D2FE6F /* TYBaseAnimation.m */,
+				35D2D0C1292C5D1300D2FE6F /* UIImage+TYAlert.h */,
+				35D2D0B7292C5D1300D2FE6F /* UIImage+TYAlert.m */,
+				35D2D0B6292C5D1300D2FE6F /* UIView+TYAutoLayout.h */,
+				35D2D0BE292C5D1300D2FE6F /* UIView+TYAutoLayout.m */,
 			);
 			path = TYAlertController_Ex;
 			sourceTree = "<group>";
@@ -197,10 +252,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D2D0C9292C5D1300D2FE6F /* TYAlertScaleFadeAnimation.m in Sources */,
+				35D2D0CB292C5D1300D2FE6F /* TYAlertController+BlurEffects.m in Sources */,
 				35D2D0A2292B927E00D2FE6F /* ViewController.m in Sources */,
+				35D2D0D0292C5D1300D2FE6F /* TYAlertController.m in Sources */,
+				35D2D0CD292C5D1300D2FE6F /* UIView+TYAutoLayout.m in Sources */,
 				35D2D09C292B927E00D2FE6F /* AppDelegate.m in Sources */,
+				35D2D0C7292C5D1300D2FE6F /* TYAlertView.m in Sources */,
 				35D2D0AD292B928600D2FE6F /* main.m in Sources */,
+				35D2D0CE292C5D1300D2FE6F /* TYAlertDropDownAnimation.m in Sources */,
 				35D2D09F292B927E00D2FE6F /* SceneDelegate.m in Sources */,
+				35D2D0CF292C5D1300D2FE6F /* TYBaseAnimation.m in Sources */,
+				35D2D0CA292C5D1300D2FE6F /* TYAlertFadeAnimation.m in Sources */,
+				35D2D0CC292C5D1300D2FE6F /* TYAlertController+TransitionAnimate.m in Sources */,
+				35D2D0C8292C5D1300D2FE6F /* UIImage+TYAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
