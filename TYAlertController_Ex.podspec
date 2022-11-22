@@ -9,5 +9,5 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.source       = { :git => "https://github.com/Delevel1020/TYAlertController_Ex.git", :tag => spec.version }
   spec.requires_arc = true
-  spec.source_files  = "TYAlertController_Ex/TYAlertController/*.{h,m}"
+  spec.source_files  = "TYAlertController_Ex/TYAlertController_Ex/*.{h,m}"
 end
