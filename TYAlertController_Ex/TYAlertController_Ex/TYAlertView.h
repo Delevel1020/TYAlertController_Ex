@@ -42,6 +42,8 @@ typedef NS_ENUM(NSUInteger, TYAlertActionStyle) {
 @property (nonatomic, assign) CGFloat messageLableTopSpace;
 // 消息左右间隙 默认 16pt
 @property (nonatomic, assign) CGFloat messageLableEdgeSpace;
+// 如果只有两个按钮的时候，是水平还是竖直方向 默认 水平方向 YES
+@property (nonatomic, assign) BOOL buttonHorizontal;
 // 按钮content顶部高度 默认 24pt
 @property (nonatomic, assign) CGFloat buttonContentTopSpace;
 // 按钮content底部高度 默认 0pt
@@ -66,7 +68,7 @@ typedef NS_ENUM(NSUInteger, TYAlertActionStyle) {
 @property (nonatomic, strong) UIColor *buttonDefaultHightBgColor;
 @property (nonatomic, strong) UIColor *buttonCancelHightBgColor;
 @property (nonatomic, strong) UIColor *buttonOKHightBgColor;
-// 按钮字体颜色 
+// 按钮字体颜色
 @property (nonatomic, strong) UIColor *buttonDefaultTitleColor;
 @property (nonatomic, strong) UIColor *buttonCancelTitleColor;
 @property (nonatomic, strong) UIColor *buttonOKTitleColor;

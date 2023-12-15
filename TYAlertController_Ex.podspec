@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "TYAlertController_Ex"
-  spec.version      = "0.1.2"
+  spec.version      = "0.1.3"
   spec.summary      = "TYAlertController_Ex is Modify the library based on the third-party TYAlertController"
   spec.description  = <<-DESC
                     "TYAlertController_Ex Library"

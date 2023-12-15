@@ -113,6 +113,8 @@
     _messageLableTopSpace = 16;
     // 消息左右间隙 默认 16pt
     _messageLableEdgeSpace = 16;
+    // 如果只有两个按钮的时候，是水平还是竖直方向 默认 水平方向 YES
+    _buttonHorizontal = YES;
     // 按钮content顶部高度 默认 24pt
     _buttonContentTopSpace = 24;
     // 按钮content底部高度 默认 0pt
@@ -359,13 +361,23 @@
         [_buttonContentView addConstraintToView:button edgeInset:UIEdgeInsetsZero];
         [button addConstraintWidth:0 height:_buttonHeight];
     } else if (_buttons.count == 2) {
-        _buttonContentHorLineView.hidden = NO;
-        _buttonContentVerLineView.hidden = NO;
-        UIButton *firstButton = _buttons.firstObject;
-        [_buttonContentView removeConstraintWithView:firstButton attribute:NSLayoutAttributeRight];
-        [_buttonContentView addConstraintWithView:button topView:_buttonContentView leftView:nil bottomView:nil rightView:_buttonContentView edgeInset:UIEdgeInsetsZero];
-        [_buttonContentView addConstraintWithLeftView:firstButton toRightView:button constant:_buttonMargin];
-        [_buttonContentView addConstraintEqualWithView:button widthToView:firstButton heightToView:firstButton];
+        if (_buttonHorizontal == YES) {
+            _buttonContentHorLineView.hidden = NO;
+            _buttonContentVerLineView.hidden = NO;
+            UIButton *firstButton = _buttons.firstObject;
+            [_buttonContentView removeConstraintWithView:firstButton attribute:NSLayoutAttributeRight];
+            [_buttonContentView addConstraintWithView:button topView:_buttonContentView leftView:nil bottomView:nil rightView:_buttonContentView edgeInset:UIEdgeInsetsZero];
+            [_buttonContentView addConstraintWithLeftView:firstButton toRightView:button constant:_buttonMargin];
+            [_buttonContentView addConstraintEqualWithView:button widthToView:firstButton heightToView:firstButton];
+        } else {
+            _buttonContentHorLineView.hidden = YES;
+            _buttonContentVerLineView.hidden = YES;
+            UIButton *firstButton = _buttons.firstObject;
+            [_buttonContentView removeConstraintWithView:firstButton attribute:NSLayoutAttributeBottom];
+            [_buttonContentView addConstraintWithView:button topView:nil leftView:_buttonContentView bottomView:_buttonContentView rightView:_buttonContentView edgeInset:UIEdgeInsetsZero];
+            [_buttonContentView addConstraintWithTopView:firstButton toBottomView:button constant:_buttonMargin];
+            [_buttonContentView addConstraintEqualWithView:button widthToView:nil heightToView:firstButton];
+        }
     } else {
         _buttonContentHorLineView.hidden = YES;
         _buttonContentVerLineView.hidden = YES;
